@@ -1,11 +1,8 @@
-<% question = params[:question]%>
 
-<%if question == "I am going to work" %>
+<h3><%= @answer %></h3>
 
-if question.downcase == "i am going to work right now!"
-    return ""
-  elsif question.include? "?"
-    return "Silly question, get dressed and go to work!"
-  else
-    return "I don't care, get dressed and go to work!"
-  end
+
+
+<h3><%= @coach_answer %></h3>
+
+<%= link_to "Ask a new question", ask_path %>
